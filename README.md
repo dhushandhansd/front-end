@@ -10,6 +10,6 @@
 8. Canvas and Meta Tags
 9. CSS inline,internal, external, Pseudo Selectors, Global vs local scope
 
-## FIles are in the Respective Branch
+## Files are in the Respective Branch
 
 ## Developed by Shree Dhushandhan
