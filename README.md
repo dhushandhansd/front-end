@@ -8,6 +8,7 @@
 6. Registration Form Validation
 7. iframes for Search Engine
 8. Canvas and Meta Tags
+9. CSS inline,internal, external, Pseudo Selectors, Global vs local scope
 
 ## FIles are in the Respective Branch
 
