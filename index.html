@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Note Now</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="form-container">
+      <div class="fields-container">
+        <h3>NOTE NOW</h3>
+        <form id="register" class="register-form">
+          <div class="name-field">
+            <input type="text" name="name" id='name' class="name-input" placeholder="Full Name" required>
+          </div>
+          <div class="phone-field">
+            <input type="tel" name="phone" id='phone' class="phone-input" placeholder="Phone Number">
+          </div>
+          <div class="email-field">
+            <input type="email" name="email" id='email' class="email-input" placeholder="Email Address" required>
+          </div>
+          <div class="password-field">
+            <input type="password" name="password" id='password' class="password-input" placeholder="Password" required>
+          </div>
+          <div class="forgot-password">
+            <p>Forgot Password ?</p>
+          </div>
+          <div class="error-message">
+            <p id="error"></p>
+          </div>
+          <div class="button-field">
+            <input type="submit" class="register-button"></input>
+          </div>
+        </form>
+      </div>
+      <div class="image-container">
+        <img src="./organize-image.png" alt="Organize">
+      </div>
+    </div>
+  </div>
+  <div class="credits-container" style="display: none;">
+    <p>Developed by Shree Dhushandhan UKSD</p>
+  </div>
+
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
