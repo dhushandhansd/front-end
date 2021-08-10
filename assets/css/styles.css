@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat';
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: tomato;
+    color: white;
+}
+
+.middle-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    background-color: black;
+    width: 200px;
+    height: 170px;
+    margin: 40px;
+    border: 5px solid transparent;
+    border-radius: 10px; 
+}
+
+.robin-img {
+    background-image: url('/assets/robin-still.png');
+    background-repeat: no-repeat;
+    background-size: 200px 170px;
+    border-radius: 10px;
+}
+
+.robin-img:hover {
+    background-image: url('/assets/robin.gif');
+    border-radius: 10px;
+    border-image: linear-gradient(to right, tomato, green);
+    border-image-slice: 1;
+    box-shadow: 0 3px 10px rgb(0, 0, 0.2);
+}
+
+.robin-img-active {
+    background-image: url('/assets/robin.gif');
+    border-image: linear-gradient(to right, tomato, green);
+    border-image-slice: 1;
+    box-shadow: 0 3px 10px rgb(0, 0, 0.2);
+}
+
+
+
+.star-fire-img {
+    background-image: url('/assets/starfire-still.PNG');
+    background-repeat: no-repeat;
+    background-size: 200px 170px;
+}
+
+.star-fire-img:hover {
+    background-image: url('/assets/star-fire.gif');
+    border-image: linear-gradient(to right, pink, #858AC2);
+    border-image-slice: 1;
+    box-shadow: 0 3px 10px rgb(0, 0, 0.2);
+}
+
+.star-fire-img-active {
+    background-image: url('/assets/star-fire.gif');
+    border-image: linear-gradient(to right, pink, #858AC2);
+    border-image-slice: 1;
+    box-shadow: 0 3px 10px rgb(0, 0, 0.2);
+}
+
+
+
+.raven-img {
+    background-image: url('/assets/raven-still.PNG');
+    background-repeat: no-repeat;
+    background-size: 200px 170px;
+}
+
+.raven-img:hover {
+    background-image: url('/assets/raven.gif');
+    border-image: linear-gradient(to right, #4d54a0, black);
+    border-image-slice: 1;
+    box-shadow: 0 3px 10px rgb(0, 0, 0.2);
+}
+
+.raven-img-active {
+    background-image: url('/assets/raven.gif');
+    border-image: linear-gradient(to right, #4d54a0, black);
+    border-image-slice: 1;
+    box-shadow: 0 3px 10px rgb(0, 0, 0.2);
+}
+
+
+
+
+.beast-boy-img {
+    background-image: url('/assets/beast-boy-still.PNG');
+    background-repeat: no-repeat;
+    background-size: 200px 170px;
+}
+
+.beast-boy-img:hover {
+    background-image: url('/assets/beast-boy.gif');
+    border-image: linear-gradient(to right, black,rgb(236, 158, 171));
+    border-image-slice: 1;
+    box-shadow: 0 3px 10px rgb(0, 0, 0.2);
+}
+
+.beast-boy-img-active {
+    background-image: url('/assets/beast-boy.gif');
+    border-image: linear-gradient(to right, black,rgb(236, 158, 171));
+    border-image-slice: 1;
+    box-shadow: 0 3px 10px rgb(0, 0, 0.2);
+}
+
+
+
+.cyborg-img {
+    background-image: url('/assets/cyborg-still.PNG');
+    background-repeat: no-repeat;
+    background-size: 200px 170px;
+}
+
+.cyborg-img:hover {
+    background-image: url('/assets/cyborg.gif');
+    border-image: linear-gradient(to right, #C2C2C2, #00ACEE);
+    border-image-slice: 1;
+    box-shadow: 0 3px 10px rgb(0, 0, 0.2);
+}
+
+.cyborg-img-active {
+    background-image: url('/assets/cyborg.gif');
+    border-image: linear-gradient(to right, #C2C2C2, #00ACEE);
+    border-image-slice: 1;
+    box-shadow: 0 3px 10px rgb(0, 0, 0.2);
+}
+
+
+.instruction, .creator {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-align: justify;
+}
