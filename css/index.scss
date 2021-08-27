@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
+$matte : #28282B;
+$white : #ffffff;
+$mildBlack : rgba(0, 0, 0, 0.308);
+$primary : royalblue;
+$white : whitesmoke;
+$litefont : 100;
+$medfont : 300;
+$boldfont : 400;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000;
+}
+
+.form-container {
+    width: 450px;
+    height: 350px;
+    background: $primary;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px $mildBlack;
+    transition: 0.5s;
+	transform-style: preserve-3d;
+
+
+    .login-container {
+        width: 100%;
+        height: 100%;
+        color: $white;
+        display: flex;
+        // display: none;
+        flex-direction: column;
+        backface-visibility: hidden;
+        z-index: 2;
+
+        .title-container {
+            width: 100%;
+            margin-top: 30px;
+            text-align: center;
+            backface-visibility: hidden;
+
+
+            h3 {
+                font-size: 25px;
+                font-weight: $boldfont;
+            }
+        }
+
+        .email-container {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            backface-visibility: hidden;
+
+
+            input {
+                position: absolute;
+                width: 300px;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                text-align: center;
+                padding-top: 5px;
+            }
+
+            h4 {
+                color: black;
+                position: absolute;
+                top: 9px;
+                font-size: 16px;
+                font-weight: $medfont;
+                pointer-events: none;
+                transition: 0.2s ease-in;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            input:focus ~ h4 {
+                font-size: 12px;
+                top: 0;
+            }
+        }
+
+        .password-container {
+            width: 100%;
+            margin-top: 15%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            backface-visibility: hidden;
+
+
+            input {
+                position: absolute;
+                width: 300px;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                text-align: center;
+                padding-top: 5px;
+            }
+
+            h4 {
+                color: black;
+                position: absolute;
+                top: 9px;
+                font-size: 16px;
+                font-weight: $medfont;
+                pointer-events: none;
+                transition: 0.2s ease-in;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            input:focus ~ h4 {
+                font-size: 12px;
+                top: 0;
+            }
+        }
+
+        .login-btn-container {
+            width: 100%;
+            margin-top: 15%;
+            display: flex;
+            justify-content: center;
+            backface-visibility: hidden;
+
+
+            button {
+                width: 200px;
+                height: 40px;
+                border: none;
+                border-radius: 20px;
+                font-size: 18px;
+            }
+
+            button:focus, button:hover {
+                box-shadow: 0 3px 10px $mildBlack;
+            }
+        }
+
+        .register-btn {
+            position: absolute;
+            right: -15px;
+            top: 45%;
+            font-weight: 400;
+            transform: rotate(90deg);
+            color: $white;
+            cursor: pointer;
+            backface-visibility: hidden;
+            transition: all 0.1s;
+            user-select: none;
+        }
+
+        .register-btn:focus-within ~ .login-container {
+            transform: rotateY(180deg);
+        }
+    }
+
+
+    .signup-container {
+        backface-visibility: hidden;
+        display: none;
+        width: 100%;
+        height: 100%;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        transform: rotateY(180deg);
+
+        .signup-title-container {
+            width: 100%;
+            margin-top: 30px;
+            text-align: center;
+            backface-visibility: hidden;
+
+
+            h3 {
+                font-size: 25px;
+                font-weight: $boldfont;
+            }
+        }
+
+        .name-container {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            backface-visibility: hidden;
+
+
+            input {
+                position: absolute;
+                width: 300px;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                text-align: center;
+                padding-top: 5px;
+            }
+
+            h4 {
+                color: black;
+                position: absolute;
+                top: 9px;
+                font-size: 16px;
+                font-weight: $medfont;
+                pointer-events: none;
+                transition: 0.2s ease-in;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            input:focus ~ h4 {
+                font-size: 12px;
+                top: 0;
+            }
+        }
+
+        .signup-email-container {
+            width: 100%;
+            margin-top: 12%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            backface-visibility: hidden;
+
+
+            input {
+                position: absolute;
+                width: 300px;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                text-align: center;
+                padding-top: 5px;
+            }
+
+            h4 {
+                color: black;
+                position: absolute;
+                top: 9px;
+                font-size: 16px;
+                font-weight: $medfont;
+                pointer-events: none;
+                transition: 0.2s ease-in;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            input:focus ~ h4 {
+                font-size: 12px;
+                top: 0;
+            }
+        }
+
+        .signup-password-container {
+            width: 100%;
+            margin-top: 12%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            backface-visibility: hidden;
+
+
+            input {
+                position: absolute;
+                width: 300px;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                text-align: center;
+                padding-top: 5px;
+            }
+
+            h4 {
+                color: black;
+                position: absolute;
+                top: 9px;
+                font-size: 16px;
+                font-weight: $medfont;
+                pointer-events: none;
+                transition: 0.2s ease-in;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            input:focus ~ h4 {
+                font-size: 12px;
+                top: 0;
+            }
+        }
+
+        .signup-btn-container {
+            width: 100%;
+            margin-top: 15%;
+            display: flex;
+            justify-content: center;
+            backface-visibility: hidden;
+
+
+            button {
+                width: 200px;
+                height: 40px;
+                border: none;
+                border-radius: 20px;
+                font-size: 18px;
+            }
+
+            button:focus, button:hover {
+                box-shadow: 0 3px 10px $mildBlack;
+            }
+        }
+
+        .login-btn {
+            position: absolute;
+            right: -15px;
+            top: 45%;
+            font-weight: 400;
+            transform: rotate(90deg);
+            color: $white;
+            cursor: pointer;
+            backface-visibility: hidden;
+            transition: all 0.1s;
+            user-select: none;
+        }
+    }
+}
+
